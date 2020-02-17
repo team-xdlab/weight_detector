@@ -1,0 +1,204 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 strtok.save
+006-009 _Randseed
+00A     rs232_errors
+00B     rs232_errors
+00C     rs232_errors
+00D-010 g_rawData
+011-014 calibratedWeight
+015-130 arr_stab
+131-134 new_val
+135-138 pre_val
+139-13A dif_val
+13B     units
+13C     max_stab
+13D     onlyOnce
+13E-141 remainder
+142-145 sum
+146-149 avg
+14A-14D Is_Obj.temp
+14E-151 Is_Obj.avg
+152-155 Is_Obj.sum
+156-159 Is_Obj.my_stable_val
+15A     Is_Obj.i
+15B     @delay_ms1.P1
+15B-15E @FLT.P2
+15B-15C @DIV1616.P3
+15B-15C @PRINTF_LD_19200_31766_31767.P4
+15B-15E @PRINTF_L32D_19200_31766_31767FPFPF.P5
+15B-15C @ITOF.P6
+15B-15E Is_True_Weight.temp
+15B     @PSTRINGC_19200_31766_31767.@SCRATCH1
+15B     Is_Obj.@SCRATCH1
+15C     @PUTCHAR_3_.P1
+15C     @PSTRINGC_19200_31766_31767.@SCRATCH2
+15C     Is_Obj.@SCRATCH2
+15D-15E Check_Stability.val
+15D-15E @DIV1616.P1
+15D     Is_Obj.@SCRATCH3
+15D     @PRINTF_LD_19200_31766_31767.@SCRATCH1
+15E     Is_Obj.@SCRATCH4
+15E     @PRINTF_LD_19200_31766_31767.@SCRATCH2
+15F-162 @PRINTF_L32D_19200_31766_31767.P1
+15F     Is_True_Weight.i
+15F     @PRINTF_L32D_19200_31766_31767FPFPF.P1
+15F     Check_Stability.i
+15F     @PSTRINGCN_19200_31766_31767.P1
+15F-162 @FLT.P2
+15F     @DIV1616.@SCRATCH1
+15F     @PRINTF_LD_19200_31766_31767.@SCRATCH3
+160-163 readStrainGuage.pulse
+160     @PSTRINGCN_19200_31766_31767.@SCRATCH1
+160     getRaw.@SCRATCH1
+160     Check_Stability.@SCRATCH1
+160     @PRINTF_LD_19200_31766_31767.@SCRATCH4
+160     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH1
+161     @PSTRINGCN_19200_31766_31767.@SCRATCH2
+161     getRaw.@SCRATCH2
+161     Check_Stability.@SCRATCH2
+161     @PRINTF_LD_19200_31766_31767.@SCRATCH5
+161     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH2
+162-163 @MUL1616.P1
+162     getRaw.@SCRATCH3
+162     Check_Stability.@SCRATCH3
+162     @PRINTF_LD_19200_31766_31767.@SCRATCH6
+162     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH3
+163     @PRINTF_L32D_19200_31766_31767.@SCRATCH1
+163     getRaw.@SCRATCH4
+163     Check_Stability.@SCRATCH4
+163     @FLT.@SCRATCH1
+163     @PRINTF_LD_19200_31766_31767.@SCRATCH7
+163     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH4
+164     readStrainGuage.i
+164-165 @MUL1616.P1
+164     @PRINTF_L32D_19200_31766_31767.@SCRATCH2
+164     getRaw.@SCRATCH5
+164     @FLT.@SCRATCH2
+164     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH5
+165     readStrainGuage.@SCRATCH1
+165     @PRINTF_L32D_19200_31766_31767.@SCRATCH3
+165     getRaw.@SCRATCH6
+165     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH6
+166     @MUL1616.@SCRATCH1
+166     @PRINTF_L32D_19200_31766_31767.@SCRATCH4
+166     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH7
+167     @PRINTF_L32D_19200_31766_31767.@SCRATCH5
+167     @PRINTF_L32D_19200_31766_31767FPFPF.@SCRATCH8
+168-16B @FTOSD.P1
+168-16B @MULFF.P2
+168     @PRINTF_L32D_19200_31766_31767.@SCRATCH6
+169     @PRINTF_L32D_19200_31766_31767.@SCRATCH7
+16A     @PRINTF_L32D_19200_31766_31767.@SCRATCH8
+16B-16E @DIV3232.P1
+16C-16F @MULFF.P1
+16C     @FTOSD.@SCRATCH1
+16F-172 @DIV3232.P1
+170     @MULFF.@SCRATCH1
+171     @MULFF.@SCRATCH2
+172     @MULFF.@SCRATCH3
+173     @DIV3232.@SCRATCH1
+174     @DIV3232.@SCRATCH2
+175     @DIV3232.@SCRATCH3
+176     @DIV3232.@SCRATCH4
+177     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000892  @MULFF
+0006BA  @ITOF
+000674  @DIV1616
+0004FC  @MUL1616
+00010E  @delay_ms1
+0004F4  @PUTCHARI_BIU_1
+00076A  @PUTCHAR_3_
+000158  setUp
+000004  @const361
+000136  @PSTRINGC_19200_31766_31767
+000174  weightINIT
+00017C  readStrainGuage
+0001E2  @DIV3232
+00001A  @const393
+0002BE  @PSTRINGCN_19200_31766_31767
+0002E8  @PRINTF_L32D_19200_31766_31767
+000276  getRaw
+00051E  Check_Stability
+0003F6  Is_True_Weight
+000B72  Is_Obj
+000032  @const406
+000056  @const407
+00006A  @const412
+00007C  @const414
+000086  @const415
+0006F0  @FLT
+000094  @const419
+0000B0  @const421
+0000CC  @const423
+0007AE  @PRINTF_LD_19200_31766_31767
+0000EE  @const426
+00098A  @FTOSD
+0009CE  @PRINTF_L32D_19200_31766_31767FPFPF
+000FF4  MAIN
+000FF4  @cinit1
+001068  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\PROJECT_EDL\P&G\Weight_Detector.X\
+
+Project Files:
+    main.c                                                  [17-Feb-20 16:48  CRC=05B87212]
+    C:\Program Files (x86)\PICC\devices\18f4410.h           [30-Nov-12 18:59  CRC=7019102A]
+    C:\Program Files (x86)\PICC\drivers\stdio.h             [31-Jul-07 13:24  CRC=4E4534F4]
+    C:\Program Files (x86)\PICC\drivers\string.h            [14-Jul-11 10:13  CRC=23EDEC8F]
+    C:\Program Files (x86)\PICC\drivers\stddef.h            [16-Jul-10 09:27  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\drivers\ctype.h             [03-Jan-08 13:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\drivers\stdlib.h            [08-Jun-11 14:39  CRC=0B6669CF]
+    main.h                                                  [17-Feb-20 15:57  CRC=B29B5FCA]
+    weight.h                                                [17-Feb-20 16:44  CRC=F56D35EE]
+
+Source signature=477CC73F
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4410
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Predefined symbols:
+       #define __18F4410 1
+
+Output Files:
+    Errors:      build\default\production\main.err
+    Ext Symbols: build\default\production\main.esym
+    INHX32:      build\default\production\main.hex
+    Symbols:     build\default\production\main.sym
+    List:        build\default\production\main.lst
+    Debug/COFF:  build\default\production\main.cof
+    Project:     main.PJT
+    Call Tree:   build\default\production\main.tre
+    Statistics:  build\default\production\main.STA

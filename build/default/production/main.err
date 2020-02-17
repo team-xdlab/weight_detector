@@ -1,0 +1,4 @@
+E:\PROJECT_EDL\P&G\Weight_Detector.X\main.c:45:9:  Warning#208  Function not void and does not return a value  Check_Stability
+      Memory usage:   ROM=29%      RAM=43% - 49%
+      0 Errors,  1 Warnings.
+Build Successful.
